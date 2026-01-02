@@ -1,6 +1,6 @@
-# WJJ.AIExplorer Installation Script
+# AI Explorer Installation Script
 Write-Host "=========================================" -ForegroundColor Cyan
-Write-Host "  WJJ.AIExplorer Shell Extension Installer" -ForegroundColor Cyan
+Write-Host "  AI Explorer Shell Extension Installer" -ForegroundColor Cyan
 Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -13,7 +13,7 @@ if (-not $isAdmin) {
 }
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$projectDir = Join-Path $scriptDir "WJJ.AIExplorer"
+$projectDir = Join-Path $scriptDir "AI-Explorer"
 $outputDir = Join-Path $projectDir "bin\Release\net8.0-windows10.0.19041.0"
 
 Write-Host "Project: $projectDir" -ForegroundColor Yellow
@@ -23,7 +23,12 @@ Write-Host ""
 Write-Host "Building project..." -ForegroundColor Yellow
 dotnet build $projectDir -c Release
 
-$exePath = Join-Path $outputDir "WJJ.AIExplorer.exe"
+$exePath = Join-Path $outputDir "AIExplorer.exe"
+
+# Copy assets to output directory
+$targetAssetsDir = Join-Path $outputDir "assets"
+if (-not (Test-Path $targetAssetsDir)) { New-Item -ItemType Directory -Path $targetAssetsDir -Force | Out-Null }
+Copy-Item (Join-Path $scriptDir "assets\*") $targetAssetsDir -Force
 
 if (-not (Test-Path $exePath)) {
     Write-Error "Build failed - EXE not found at $exePath"

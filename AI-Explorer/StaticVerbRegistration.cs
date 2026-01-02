@@ -73,7 +73,8 @@ public static class StaticVerbRegistration
             var shellKeyPath = $@"Software\Classes\Directory\Background\shell\{VerbName}";
             Registry.LocalMachine.DeleteSubKeyTree(shellKeyPath, false);
 
-            // Also clean up any old COM registrations
+            // Also clean up any old registrations
+            try { Registry.LocalMachine.DeleteSubKeyTree(@"Software\Classes\Directory\Background\shell\WJJ.AIExplorer", false); } catch {}
             try { Registry.LocalMachine.DeleteSubKeyTree(@"Software\Classes\Directory\Background\shellex\ContextMenuHandlers\WJJ.AIExplorer", false); } catch {}
             try { Registry.CurrentUser.DeleteSubKeyTree(@"Software\Classes\Directory\Background\shellex\ContextMenuHandlers\WJJ.AIExplorer", false); } catch {}
 
