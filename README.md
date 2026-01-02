@@ -9,6 +9,7 @@
 
 ## 📸 运行效果
 ![运行截图](./assets/screenshot_new.png)
+<img width="818" height="467" alt="1" src="https://github.com/user-attachments/assets/a60c0bb9-f848-4a03-b21a-2a332f2b8175" />
 
 ## 🚀 30秒快速安装
 1. **下载并解压** 整个项目。
