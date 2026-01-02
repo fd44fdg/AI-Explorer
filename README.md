@@ -13,6 +13,8 @@
 - **Fast**: Instant detection and one-click access to AI.
 
 ## 📸 Demo
+<img width="818" height="467" alt="1" src="https://github.com/user-attachments/assets/08f14fda-5420-48cf-817f-7277aaaf1973" />
+
 ![Demo](./assets/screenshot_new.png)
 
 ## 🚀 30s Quick Start
@@ -51,6 +53,9 @@ Simply run `uninstall.ps1` as Administrator to remove all traces.
 - **快**：秒级检测，一键直达 AI。
 
 ## 📸 运行效果
+
+<img width="818" height="467" alt="1" src="https://github.com/user-attachments/assets/005de9bf-3d5c-4f1c-9289-d5ce174b1fe4" />
+
 ![运行截图](./assets/screenshot_new.png)
 
 ## 🚀 30秒快速安装
