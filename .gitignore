@@ -1,0 +1,14 @@
+[Option]
+Visual Studio
+[Source]
+https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore
+
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+build_errors.txt
+debug_install.ps1
