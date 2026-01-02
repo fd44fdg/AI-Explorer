@@ -8,9 +8,8 @@
 - **快**：秒级检测，一键直达 AI。
 
 ## 📸 运行效果
-![运行截图](./assets/screenshot_new.png)
 <img width="818" height="467" alt="1" src="https://github.com/user-attachments/assets/a60c0bb9-f848-4a03-b21a-2a332f2b8175" />
-
+![运行截图](./assets/screenshot_new.png)
 ## 🚀 30秒快速安装
 1. **下载并解压** 整个项目。
 2. **右键** `install.ps1`，选择“使用 PowerShell 运行”（需要管理员权限）。
