@@ -1,6 +1,49 @@
+[English](#english) | [中文](#chinese)
+
+---
+
+<a name="english"></a>
 # AI Explorer 🚀
 
-**AI Explorer** 是一个超轻量级的 Windows 右键菜单工具。让你在文件夹里点一下右键，就能立刻唤起 Claude Code 或 Gemini CLI 等 AI 助手。
+**AI Explorer** is an ultra-lightweight Windows context menu tool. It allows you to instantly launch AI assistants like **Claude Code** or **Gemini CLI** with a single right-click in any folder.
+
+## ✨ Features
+- **Effortless**: No more manual `cd` or typing startup commands.
+- **Minimalist**: Adds only one entry to the context menu, keeping it clean.
+- **Fast**: Instant detection and one-click access to AI.
+
+## 📸 Demo
+![Demo](./assets/screenshot_new.png)
+
+## 🚀 30s Quick Start
+1. **Download and Extract** the project.
+2. **Right-click** `install.ps1` and select "Run with PowerShell" (Administrator required).
+3. **Done!** You will see **"AI Tools"** in the folder background right-click menu.
+
+## 🛠 Currently Supported
+- **Claude Code**
+- **Gemini CLI**
+- **Codex CLI**
+- **iFlow CLI**
+
+> [!TIP]
+> AI Explorer automatically detects installed tools; tools not found will be disabled in the UI.
+
+## 🛠️ How to Extend?
+Want to add a new tool like `Aider`? It's just two steps:
+1. **Add Enum**: Add the tool name to `AICommandType.cs`.
+2. **Register Metadata**: Add the name and detection paths in `AICLILauncher.cs`.
+The UI will update automatically!
+
+## 🗑 Uninstallation
+Simply run `uninstall.ps1` as Administrator to remove all traces.
+
+---
+
+<a name="chinese"></a>
+# AI Explorer (中文版) 🚀
+
+**AI Explorer** 是一个超轻量级的 Windows 右键菜单工具。让你在文件夹里点一下右键，就能立刻唤起 **Claude Code** 或 **Gemini CLI** 等 AI 助手。
 
 ## ✨ 为什么用它？
 - **省心**：不用再费劲 `cd` 进文件夹，也不用手动输入启动命令。
@@ -8,9 +51,8 @@
 - **快**：秒级检测，一键直达 AI。
 
 ## 📸 运行效果
-<img width="818" height="467" alt="1" src="https://github.com/user-attachments/assets/a60c0bb9-f848-4a03-b21a-2a332f2b8175" />
-
 ![运行截图](./assets/screenshot_new.png)
+
 ## 🚀 30秒快速安装
 1. **下载并解压** 整个项目。
 2. **右键** `install.ps1`，选择“使用 PowerShell 运行”（需要管理员权限）。
