@@ -2,15 +2,13 @@
 
 **AI Explorer** 是一个超轻量级的 Windows 右键菜单工具。让你在文件夹里点一下右键，就能立刻唤起 Claude Code 或 Gemini CLI 等 AI 助手。
 
-![Banner](./assets/app_icon.png)
-
 ## ✨ 为什么用它？
 - **省心**：不用再费劲 `cd` 进文件夹，也不用手动输入启动命令。
 - **干净**：右键菜单只加一个入口，不乱占地方。
 - **快**：秒级检测，一键直达 AI。
 
 ## 📸 运行效果
-![运行截图](./assets/screenshot.png)
+![运行截图](./assets/screenshot_new.png)
 
 ## 🚀 30秒快速安装
 1. **下载并解压** 整个项目。
